@@ -4,7 +4,7 @@ metadata:
   name: frontend-deployment
   namespace: innovate-ecommerce
 spec:
-  replicas: 4
+  replicas: 1
   selector:
     matchLabels:
       app: frontend
@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: innovate-frontend:latest
+          image: innovate-front:latest
+          imagePullPolicy: Never
           ports:
             - containerPort: 80
           resources:

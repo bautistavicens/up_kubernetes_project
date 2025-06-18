@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: innovate-ecommerce
+data:
+  # Backend DB config
+  DB_HOST: mysql
+  DB_USER: root
+  DB_NAME: up_nube_db
+  DB_PORT: "3306"
+
+  # Frontend config (si necesitás alguna)
+  FRONTEND_TITLE: "Tienda de Bebidas"
+
